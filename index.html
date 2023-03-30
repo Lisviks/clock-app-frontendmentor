@@ -2,12 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.scss" />
+
+    <title>Frontend Mentor | Clock App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <main id="app">
+      <section class="quote-section">
+        <p class="quote">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut illo amet eos excepturi magni. Excepturi numquam
+          tenetur voluptate quo labore?
+        </p>
+        <p class="author">John Doe</p>
+        <div class="refresh-quote-btn">
+          <img src="./assets/desktop/icon-refresh.svg" alt="refresh icon" />
+        </div>
+      </section>
+      <section class="time-section">
+        <div class="time-card">
+          <div class="greeting">
+            <img src="./assets/desktop/icon-sun.svg" alt="greeting icon" class="greeting icon" />
+            <p>Good Morning</p>
+          </div>
+          <div class="time">
+            <p>20:18 <span>BST</span></p>
+          </div>
+          <p class="location">In Dublin, IE</p>
+        </div>
+        <div class="more-btn">
+          <p>More <img src="./assets/desktop/icon-arrow-down.svg" alt="arrow icon" /></p>
+        </div>
+      </section>
+      <section class="more-info">
+        <div class="timezone">
+          <p>Current timezone</p>
+          <p>Europe/Dublin</p>
+        </div>
+        <div class="year-day">
+          <p>Day of the year</p>
+          <p>295</p>
+        </div>
+        <div class="week-day">
+          <p>Day of the week</p>
+          <p>4</p>
+        </div>
+        <div class="week">
+          <p>Week number</p>
+          <p>42</p>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="src/main.ts"></script>
   </body>
 </html>
