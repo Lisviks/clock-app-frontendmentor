@@ -49,6 +49,12 @@ body {
       position: absolute;
       top: 0;
       right: 0;
+      transition: 0.5s;
+
+      &:active {
+        transition: 0s;
+        transform: rotate(-360deg);
+      }
     }
   }
 
