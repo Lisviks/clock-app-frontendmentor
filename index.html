@@ -5,37 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-    <link rel="stylesheet" href="style.scss" />
+    <link rel="stylesheet" href="styles.scss" />
 
     <title>Frontend Mentor | Clock App</title>
   </head>
   <body>
     <main id="app">
-      <section class="quote-section">
-        <p class="quote">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut illo amet eos excepturi magni. Excepturi numquam
-          tenetur voluptate quo labore?
-        </p>
-        <p class="author">John Doe</p>
-        <div class="refresh-quote-btn">
-          <img src="./assets/desktop/icon-refresh.svg" alt="refresh icon" />
-        </div>
-      </section>
-      <section class="time-section">
-        <div class="time-card">
-          <div class="greeting">
-            <img src="./assets/desktop/icon-sun.svg" alt="greeting icon" class="greeting icon" />
-            <p>Good Morning</p>
+      <div class="main-screen">
+        <section class="quote-section">
+          <p class="quote">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut illo amet eos excepturi magni. Excepturi
+            numquam tenetur voluptate quo labore?"
+          </p>
+          <p class="author">John Doe</p>
+          <div class="refresh-quote-btn">
+            <img src="./assets/desktop/icon-refresh.svg" alt="refresh icon" />
           </div>
-          <div class="time">
-            <p>20:18 <span>BST</span></p>
+        </section>
+        <section class="time-section">
+          <div class="time-card">
+            <div class="greeting">
+              <img src="./assets/desktop/icon-sun.svg" alt="greeting icon" class="greeting icon" />
+              <p>Good Morning</p>
+            </div>
+            <div class="time">
+              <p>20:18 <span>BST</span></p>
+            </div>
+            <p class="location">In Dublin, IE</p>
           </div>
-          <p class="location">In Dublin, IE</p>
-        </div>
-        <div class="more-btn">
-          <p>More <img src="./assets/desktop/icon-arrow-down.svg" alt="arrow icon" /></p>
-        </div>
-      </section>
+          <div class="more-btn">
+            <p>More</p>
+            <div class="icon">
+              <img src="./assets/desktop/icon-arrow-down.svg" alt="arrow icon" />
+            </div>
+          </div>
+        </section>
+      </div>
       <section class="more-info">
         <div class="timezone">
           <p>Current timezone</p>
