@@ -40,6 +40,7 @@ const displayLocation = async () => {
 const greeting = (hours: number) => {
   const greetingElement = document.querySelector('.greeting p') as HTMLParagraphElement;
   const greetingIconElement = document.querySelector('.greeting-icon') as HTMLImageElement;
+  const bodyElement = document.querySelector('body') as HTMLBodyElement;
 
   if (hours >= 5 && hours < 12) {
     greetingElement.innerText = 'Good morning';
@@ -51,8 +52,10 @@ const greeting = (hours: number) => {
 
   if (hours >= 5 && hours < 18) {
     greetingIconElement.src = './assets/desktop/icon-sun.svg';
+    bodyElement.style.backgroundImage = 'url(./assets/mobile/bg-image-daytime.jpg)';
   } else {
     greetingIconElement.src = './assets/desktop/icon-moon.svg';
+    bodyElement.style.backgroundImage = 'url(./assets/mobile/bg-image-nighttime.jpg)';
   }
 };
 
