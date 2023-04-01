@@ -37,11 +37,37 @@ const displayLocation = async () => {
   locationElement.innerText = `In ${data.location.city.name}, ${data.location.country.alpha2}`;
 };
 
+const greeting = (hours: number) => {
+  const greetingElement = document.querySelector('.greeting p') as HTMLParagraphElement;
+  const greetingIconElement = document.querySelector('.greeting-icon') as HTMLImageElement;
+
+  if (hours >= 5 && hours < 12) {
+    greetingElement.innerText = 'Good morning';
+  } else if (hours >= 12 && hours < 18) {
+    greetingElement.innerText = 'Good afternoon';
+  } else {
+    greetingElement.innerText = 'Good evening';
+  }
+
+  if (hours >= 5 && hours < 18) {
+    greetingIconElement.src = './assets/desktop/icon-sun.svg';
+  } else {
+    greetingIconElement.src = './assets/desktop/icon-moon.svg';
+  }
+};
+
+const displayGreeting = (data: any) => {
+  const date = new Date(data.datetime);
+  const hours = date.getHours();
+  greeting(hours);
+};
+
 const displayData = async () => {
   const data = await getTime();
   displayTime(data);
   displayMoreInfo(data);
   displayLocation();
+  displayGreeting(data);
 };
 
 export default displayData;
