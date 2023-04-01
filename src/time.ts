@@ -37,6 +37,18 @@ const displayLocation = async () => {
   locationElement.innerText = `In ${data.location.city.name}, ${data.location.country.alpha2}`;
 };
 
+const getScreen = () => {
+  const screenWidth = window.screen.availWidth;
+
+  if (screenWidth < 400) {
+    return 'mobile';
+  } else if (screenWidth >= 400 && screenWidth < 800) {
+    return 'tablet';
+  } else {
+    return 'desktop';
+  }
+};
+
 const greeting = (hours: number) => {
   const greetingElement = document.querySelector('.greeting p') as HTMLParagraphElement;
   const greetingIconElement = document.querySelector('.greeting-icon') as HTMLImageElement;
@@ -52,10 +64,10 @@ const greeting = (hours: number) => {
 
   if (hours >= 5 && hours < 18) {
     greetingIconElement.src = './assets/desktop/icon-sun.svg';
-    bodyElement.style.backgroundImage = 'url(./assets/mobile/bg-image-daytime.jpg)';
+    bodyElement.style.backgroundImage = `url(./assets/${getScreen()}/bg-image-daytime.jpg)`;
   } else {
     greetingIconElement.src = './assets/desktop/icon-moon.svg';
-    bodyElement.style.backgroundImage = 'url(./assets/mobile/bg-image-nighttime.jpg)';
+    bodyElement.style.backgroundImage = `url(./assets/${getScreen()}/bg-image-nighttime.jpg)`;
   }
 };
 
