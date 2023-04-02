@@ -1,5 +1,5 @@
 const getTime = async () => {
-  const res = await fetch('http://worldtimeapi.org/api/ip');
+  const res = await fetch('https://worldtimeapi.org/api/ip');
   const data = await res.json();
   return data;
 };
