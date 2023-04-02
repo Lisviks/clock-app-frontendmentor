@@ -1,0 +1,106 @@
+@media(min-width: 768px) {
+  .main-screen {
+    .quote-section {
+      margin: 8rem 0 0 6.4rem;
+      width: 57.3rem;
+
+      .quote {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        width: 54rem;
+      }
+
+      .author {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        margin-top: 1.3rem;
+      }
+    }
+
+    .time-section {
+      margin-left: 6.4rem;
+      margin-bottom: 6.4rem;
+
+      .time-card {
+        .greeting {
+          display: flex;
+
+          p {
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+            letter-spacing: 3.6px;
+
+            &:last-child {
+              display: block;
+            }
+          }
+        }
+
+        .time {
+          margin: 0;
+          p {
+            font-size: 17.5rem;
+            line-height: 17.5rem;
+            letter-spacing: -4.375px;
+
+            span {
+              font-size: 3.2rem;
+            }
+          }
+        }
+
+        .location {
+          font-size: 1.8rem;
+          letter-spacing: 3.6px;
+        }
+      }
+
+      .more-btn {
+        width: 14.6rem;
+        height: 5.6rem;
+        padding: 0 0.9rem 0 2.1rem;
+        margin-top: 8rem;
+
+        p {
+          font-size: 1.6rem;
+          line-height: 2.8rem;
+          letter-spacing: 5px;
+        }
+
+        .icon {
+          height: 4rem;
+          width: 4rem;
+
+          img {
+            width: 1.2rem;
+            height: 0.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  .more-info {
+    padding: 11.9rem 0 11.9rem 6.4rem;
+    display: grid;
+    grid-template-columns: 30.3rem 15.5rem;
+    gap: 4.8rem 8rem;
+
+    div {
+      width: unset;
+      margin: 0;
+      flex-direction: column;
+      align-items: flex-start;
+
+      p:first-child {
+        font-size: 1.3rem;
+        letter-spacing: 2.6px;
+      }
+
+      p:last-child {
+        font-size: 4rem;
+        line-height: 4.8rem;
+      }
+    }
+  }
+}
