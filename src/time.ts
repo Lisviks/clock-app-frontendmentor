@@ -52,7 +52,7 @@ const getScreen = () => {
 const greeting = (hours: number) => {
   const greetingElement = document.querySelector('.greeting p') as HTMLParagraphElement;
   const greetingIconElement = document.querySelector('.greeting-icon') as HTMLImageElement;
-  const bodyElement = document.querySelector('body') as HTMLBodyElement;
+  const appContainer = document.querySelector('.app-container') as HTMLDivElement;
 
   if (hours >= 5 && hours < 12) {
     greetingElement.innerText = 'Good morning';
@@ -64,10 +64,10 @@ const greeting = (hours: number) => {
 
   if (hours >= 5 && hours < 18) {
     greetingIconElement.src = './assets/desktop/icon-sun.svg';
-    bodyElement.style.backgroundImage = `url(./assets/${getScreen()}/bg-image-daytime.jpg)`;
+    appContainer.style.backgroundImage = `url(./assets/${getScreen()}/bg-image-daytime.jpg)`;
   } else {
     greetingIconElement.src = './assets/desktop/icon-moon.svg';
-    bodyElement.style.backgroundImage = `url(./assets/${getScreen()}/bg-image-nighttime.jpg)`;
+    appContainer.style.backgroundImage = `url(./assets/${getScreen()}/bg-image-nighttime.jpg)`;
   }
 };
 

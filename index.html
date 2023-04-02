@@ -10,56 +10,58 @@
     <title>Frontend Mentor | Clock App</title>
   </head>
   <body>
-    <main id="app" class="closed">
-      <div class="main-screen">
-        <section class="quote-section">
-          <p class="quote"></p>
-          <p class="author"></p>
-          <div class="refresh-quote-btn">
-            <img src="./assets/desktop/icon-refresh.svg" alt="refresh icon" />
-          </div>
-        </section>
-        <section class="time-section">
-          <div class="time-card">
-            <div class="greeting">
-              <img src="./assets/desktop/icon-sun.svg" alt="greeting icon" class="greeting-icon" />
-              <p></p>
-              <p>, it's currently</p>
+    <div class="app-container">
+      <main id="app" class="closed">
+        <div class="main-screen">
+          <section class="quote-section">
+            <p class="quote"></p>
+            <p class="author"></p>
+            <div class="refresh-quote-btn">
+              <img src="./assets/desktop/icon-refresh.svg" alt="refresh icon" />
             </div>
-            <div class="time">
-              <p></p>
+          </section>
+          <section class="time-section">
+            <div class="time-card">
+              <div class="greeting">
+                <img src="./assets/desktop/icon-sun.svg" alt="greeting icon" class="greeting-icon" />
+                <p></p>
+                <p>, it's currently</p>
+              </div>
+              <div class="time">
+                <p></p>
+              </div>
+              <p class="location"></p>
             </div>
-            <p class="location"></p>
-          </div>
-          <div class="more-btn">
-            <p>More</p>
-            <div class="icon">
-              <img src="./assets/desktop/icon-arrow-down.svg" alt="arrow icon" />
+            <div class="more-btn">
+              <p>More</p>
+              <div class="icon">
+                <img src="./assets/desktop/icon-arrow-down.svg" alt="arrow icon" />
+              </div>
             </div>
-          </div>
-        </section>
-      </div>
-      <section class="more-info">
-        <div class="content">
-          <div>
-            <p>Current timezone</p>
-            <p class="timezone"></p>
-          </div>
-          <div>
-            <p>Day of the year</p>
-            <p class="year-day"></p>
-          </div>
-          <div>
-            <p>Day of the week</p>
-            <p class="week-day"></p>
-          </div>
-          <div>
-            <p>Week number</p>
-            <p class="week"></p>
-          </div>
+          </section>
         </div>
-      </section>
-    </main>
+        <section class="more-info">
+          <div class="content">
+            <div>
+              <p>Current timezone</p>
+              <p class="timezone"></p>
+            </div>
+            <div>
+              <p>Day of the year</p>
+              <p class="year-day"></p>
+            </div>
+            <div>
+              <p>Day of the week</p>
+              <p class="week-day"></p>
+            </div>
+            <div>
+              <p>Week number</p>
+              <p class="week"></p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
     <script type="module" src="src/main.ts"></script>
   </body>
 </html>
