@@ -81,7 +81,7 @@ const displayData = async () => {
   const data = await getTime();
   displayTime(data);
   displayMoreInfo(data);
-  // displayLocation();
+  displayLocation();
   displayGreeting(data);
 };
 
