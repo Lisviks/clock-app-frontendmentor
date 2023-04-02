@@ -1,0 +1,108 @@
+@media(min-width: 1000px) {
+  .main-screen {
+    .quote-section {
+      margin: 5.6rem auto 0;
+      width: 111rem;
+
+      .refresh-quote-btn {
+        right: unset;
+        left: 55.567rem;
+      }
+    }
+
+    .time-section {
+      margin: 0 auto 9.8rem;
+      width: 111rem;
+      position: relative;
+
+      .time-card {
+        .greeting {
+          p {
+            font-size: 2rem;
+            letter-spacing: 4px;
+          }
+        }
+
+        .time {
+          margin: 1.6rem 0;
+          p {
+            font-size: 20rem;
+            line-height: 20rem;
+            letter-spacing: -5px;
+
+            span {
+              font-size: 4rem;
+            }
+          }
+        }
+
+        .location {
+          font-size: 2.4rem;
+          letter-spacing: 4.8px;
+        }
+      }
+
+      .more-btn {
+        width: 14.6rem;
+        height: 5.6rem;
+        margin-top: 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .more-info {
+    .content {
+      padding: 7.4rem 0 7.4rem 0;
+      width: 111rem;
+      margin: 0 auto;
+      grid-template-columns: 42.3rem 17.9rem;
+      gap: 4.2rem 24.2rem;
+
+      div {  
+        p:first-child {
+          font-size: 1.5rem;
+          letter-spacing: 3px;
+          margin-bottom: 0.9rem;
+        }
+  
+        p:last-child {
+          font-size: 5.6rem;
+          line-height: 6.8rem;
+        }
+      }
+    }
+  }
+
+  // Open more info
+
+#app.open {
+  transform: translateY(-40rem);
+  transition: 0.5s;
+
+  .time-section {
+    .more-btn {
+      .icon {
+        transform: rotate(180deg);
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+#app.closed {
+  transform: translateY(0);
+  transition: 0.5s ease;
+
+  .time-section {
+    .more-btn {
+      .icon {
+        transform: rotate(0);
+        transition: 0.5s;
+      }
+    }
+  }
+}
+}
