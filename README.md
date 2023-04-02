@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [URL]()
-- Live Site URL: [URL]()
+- Solution URL: [URL](https://www.frontendmentor.io/solutions/clock-app-jCFp67oBjB)
+- Live Site URL: [URL](https://lisviks.github.io/clock-app-frontendmentor/)
 
 ## My process
 
