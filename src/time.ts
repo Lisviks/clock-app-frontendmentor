@@ -27,7 +27,7 @@ const displayMoreInfo = (data: any) => {
 
   timezoneElement.innerText = data.timezone;
   yearDayElement.innerText = data.day_of_year;
-  weekDayElement.innerText = data.day_of_week;
+  weekDayElement.innerText = data.day_of_week === 0 ? 7 : data.day_of_week;
   weekElement.innerText = data.week_number;
 };
 
@@ -81,7 +81,7 @@ const displayData = async () => {
   const data = await getTime();
   displayTime(data);
   displayMoreInfo(data);
-  displayLocation();
+  // displayLocation();
   displayGreeting(data);
 };
 
