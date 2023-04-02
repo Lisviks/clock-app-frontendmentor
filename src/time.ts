@@ -5,7 +5,7 @@ const getTime = async () => {
 };
 
 const getLocation = async () => {
-  const res = await fetch(`https://api.ipbase.com/v2/info?apikey=${import.meta.env.VITE_API_KEY}`);
+  const res = await fetch(`https://api.ipbase.com/v2/info?apikey=jmA7lQDUEMJlEu8Zq55eAfklJ8WKxfqPIs4p6VMf`);
   const data = await res.json();
   return data.data;
 };
