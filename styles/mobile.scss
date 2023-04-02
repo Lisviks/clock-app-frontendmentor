@@ -154,3 +154,33 @@
     }
   }
 }
+
+// Open more info
+
+#app.open {
+  transform: translateY(-25.6rem);
+  transition: 0.5s;
+
+  .time-section {
+    .more-btn {
+      .icon {
+        transform: rotate(180deg);
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+#app.closed {
+  transform: translateY(0);
+  transition: 0.5s ease;
+
+  .time-section {
+    .more-btn {
+      .icon {
+        transform: rotate(0);
+        transition: 0.5s;
+      }
+    }
+  }
+}
